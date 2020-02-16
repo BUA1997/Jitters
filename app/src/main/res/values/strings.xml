@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Jitters</string>
+
+    <string name="user_name"><b><i>BUA STUART JAMES</i></b></string>
+
+    <string name="greetings">How are you</string>
 </resources>

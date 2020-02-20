@@ -14,12 +14,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-/*
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }*/
+
     public void sendMessage(View view){
         EditText message=(EditText)findViewById(R.id.message);
         Toast.makeText(this,"Sending message" +message.getText().toString(),Toast.LENGTH_SHORT).show();
@@ -33,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu, menu);
+       // MenuInflater inflater = getMenuInflater();
+        getMenuInflater().inflate(R.menu.example_menu, menu);
         return true;
     }
 
@@ -42,14 +37,16 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.about:
-                Intent intent1 =new Intent(this,DisplayMessageActivity.class);
-                EditText editText =(EditText) findViewById(R.id.about);
-                startActivity(intent1);
+                startActivity(new Intent(this,music.class));
+//                Intent intent1 =new Intent(this,DisplayMessageActivity.class);
+//                EditText editText =(EditText) findViewById(R.id.about);
+//                startActivity(intent1);
                 return  true;
             case R.id.signout:
-                Intent intent2 =new Intent(this,DisplayMessageActivity.class);
-                EditText editText1 =(EditText) findViewById(R.id.signout);
-                startActivity(intent2);
+//                Intent intent2 =new Intent(this,DisplayMessageActivity.class);
+//                EditText editText1 =(EditText) findViewById(R.id.signout);
+//                startActivity(intent2);
+                startActivity(new Intent(this,text.class));
                 return  true;
 
                 default: return super.onOptionsItemSelected(item);

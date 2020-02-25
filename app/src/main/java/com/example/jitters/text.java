@@ -33,7 +33,7 @@ public class text extends AppCompatActivity {
                 catch (IOException e){
                     e.printStackTrace();
                 }
-                textView.setText(str);
+                textView.setText((CharSequence)str);
             }
         });
     }

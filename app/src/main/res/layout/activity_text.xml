@@ -5,12 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".text">
+
     <TextView
+        android:id="@+id/textview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/textview"
         android:layout_below="@+id/btnread"
+        android:layout_marginTop="-2dp"
+        android:text="file here"
         tools:ignore="UnknownId" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

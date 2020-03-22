@@ -8,5 +8,16 @@
     <item android:title="text"
         android:id="@+id/signout"
         />
+    <item android:title="Call"
+        android:id="@+id/call"/>
+
+    <item android:title="Email"
+        android:id="@+id/email"/>
+
+    <item android:title="Recycler"
+        android:id="@+id/recycler"/>
+
+    <item android:title="List"
+        android:id="@+id/list"/>
 
 </menu>

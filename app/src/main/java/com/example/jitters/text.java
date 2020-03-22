@@ -16,7 +16,7 @@ public class text extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text);
-        final TextView textView=findViewById(R.id.textView);
+        final TextView textView=findViewById(R.id.textview22);
 
         Button button = findViewById(R.id.btnread);
         button.setOnClickListener(new View.OnClickListener() {
@@ -24,7 +24,7 @@ public class text extends AppCompatActivity {
             public void onClick(View v) {
                 String str = "";
                 try{
-                    InputStream inputStream = getAssets().open("helloworld.cpp");
+                    InputStream inputStream = getAssets().open("helloworld.c");
                     int size = inputStream.available();
                     byte[] buffer = new  byte[size];
                     inputStream.read(buffer);

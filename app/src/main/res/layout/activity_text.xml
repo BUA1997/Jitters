@@ -1,25 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".text">
 
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/textview22"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btnread"
-        android:layout_marginTop="-2dp"
+        android:layout_marginBottom="240dp"
         android:text="file here"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnread"
         tools:ignore="UnknownId" />
 
     <Button
+        android:id="@+id/btnread"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Read"
-        android:id="@+id/btnread"
-        />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        tools:layout_editor_absoluteX="29dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

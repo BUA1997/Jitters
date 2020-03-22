@@ -91,12 +91,6 @@ BroadcastReceiver receiver =new BroadcastReceiver(){
 //
                 startActivity(new Intent(this,text.class));
 
-            case R.id.call:
-                Intent intent2 = new Intent(Intent.ACTION_DIAL);
-                intent2.setData( Uri.parse("tel:0780640428"));
-
-                startActivity(intent2);
-                return true;
 
             case R.id.email:
 
@@ -108,6 +102,13 @@ BroadcastReceiver receiver =new BroadcastReceiver(){
                 intent.putExtra(Intent.EXTRA_TEXT, "am around please");
                 intent.setType("message/rfc822");
                 startActivity(intent);
+                return true;
+
+            case R.id.call:
+                Intent intent2 = new Intent(Intent.ACTION_DIAL);
+                intent2.setData( Uri.parse("tel:0780640428"));
+
+                startActivity(intent2);
                 return true;
 
             case R.id.list:

@@ -24,6 +24,12 @@
         android:id="@+id/switch2"/>
 
     <item android:title="Storage"
-        android:id="@+id/storage"/>
+    android:id="@+id/storage"/>
+
+    <item android:title="SQLITE_DB"
+        android:id="@+id/database"/>
+
+    <item android:title="map"
+        android:id="@+id/maps"/>
 
 </menu>
